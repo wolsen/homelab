@@ -1,0 +1,12 @@
+CONFIG = {
+    'working_dir': '/home/pi/pipmi',
+    'user': 'pi',
+    'group': 'gpio',
+    'args': (
+        '--workers=1',
+        '--timeout=60',
+        '--log-file=/var/log/pipower.log',
+        '--bind=0.0.0.0:8000',
+        'power_server:app',
+    ),
+}
